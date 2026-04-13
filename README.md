@@ -131,6 +131,29 @@ exe.addIncludePath(b.path("include"));
 - **构建工具**: CMake, Zig 0.15+
 - **平台**: macOS, Linux, Windows
 
+## 子项目
+
+### Lua 解释器
+
+本项目包含使用 Zig 构建的 Lua 5.5 解释器，位于 `src/lua/` 目录。
+
+**构建方式：**
+
+```bash
+cd src/lua
+zig build
+zig build run
+```
+
+**测试：**
+```bash
+./zig-out/bin/lua -v
+# Lua 5.5.1  Copyright (C) 1994-2026 Lua.org, PUC-Rio
+
+echo 'print("Hello Lua!")' | ./zig-out/bin/lua
+# Hello Lua!
+```
+
 ## 许可证
 
 MIT License
