@@ -118,3 +118,107 @@ tools/COPYING
 tools/BUGS
 tools/taos-tools
 cmake-build*
+.zig-cache/
+zig-out/
+
+# C/C++ Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.obj
+*.pdb
+*.ilk
+*.exp
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Object files
+*.s
+*.S
+
+# Libraries
+*.lib
+*.dll.a
+
+# Executables
+!*.exe
+!*.dll
+!*.so
+!*.dylib
+
+# CMake
+build/
+compile_commands.json
+CMakeCache.txt
+CMakeFiles/
+CMakeLists.txt.user
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_DartConfiguration
+DartConfiguration.tcl
+Makefile
+*.cmake
+*.make
+
+# Autotools
+configure
+config.h
+config.h.in
+config.status
+config.log
+Makefile.in
+*.m4
+aclocal.m4
+autom4te.cache/
+
+# Debug/Release
+Debug/
+Debug*/Release/
+Release/
+release/
+bin/
+lib/
+obj/
+*.app
+
+# Static analysis
+*.gcno
+*.gcda
+gcovreports/
+*.profraw
+
+# Coverage
+coverage/
+*.lcov
+*.info
+
+# Valgrind
+vgcore.*
+valgrind.log
+
+# Clang sanitizers
+*.sanitized
+*.tsan
+*.asan.out
+*.lsan.out
+*.msan.out
+*.ubsan.out
+
+# IDE
+.vscode/
+.vs/
+.idea/
+*.suo
+*.ntvs
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
